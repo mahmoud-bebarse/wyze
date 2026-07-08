@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 4px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  transition: border-color 0.12s, box-shadow 0.12s;
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+}
+
+.chip:hover {
+  border-color: var(--color-border-strong);
+}
+
+.active {
+  border-color: var(--color-indigo-600);
+  box-shadow: 0 0 0 1px var(--color-indigo-600);
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.label {
+  font-weight: var(--fw-medium);
+  line-height: 1;
+}

@@ -1,0 +1,123 @@
+.step {
+  background: transparent;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.step.open {
+  background: var(--color-indigo-100);
+  border-radius: var(--radius-lg);
+  border-bottom: none;
+  margin-bottom: var(--space-4);
+  overflow: hidden;
+}
+
+.headerWrap {
+  padding: var(--space-3) var(--space-5) 0;
+}
+
+.stepLabel {
+  font-size: var(--fs-micro);
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  font-weight: var(--fw-medium);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-3) 0 var(--space-4);
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.icon {
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+}
+
+.headerRight {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-indigo-600);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-sm);
+}
+
+.count {
+  color: var(--color-indigo-600);
+}
+
+.body {
+  padding: 0 var(--space-5) var(--space-5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.nextRow {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-5);
+}
+
+.nextButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-white);
+  color: var(--color-indigo-600);
+  border: 1px solid var(--color-indigo-600);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  transition: background 0.12s, color 0.12s;
+}
+
+.nextButton:hover {
+  background: var(--color-indigo-600);
+  color: var(--color-white);
+}
+
+.placeholder {
+  padding: var(--space-6) 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

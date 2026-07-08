@@ -1,0 +1,33 @@
+.wrap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.alignEnd {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.compare {
+  color: var(--color-red-600);
+  font-size: var(--fs-sm);
+  text-decoration-thickness: 1.5px;
+}
+
+.active {
+  color: var(--color-text);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-base);
+}
+
+.small .compare {
+  font-size: var(--fs-sm);
+}
+
+.small .active {
+  font-size: var(--fs-sm);
+  color: var(--color-indigo-600);
+  font-weight: var(--fw-bold);
+}

@@ -1,0 +1,71 @@
+.line {
+  display: grid;
+  grid-template-columns: 44px 1fr auto auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+}
+
+.thumbWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(75, 42, 239, 0.08);
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.name {
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  line-height: var(--line-tight);
+  font-weight: var(--fw-medium);
+}
+
+.variantLabel {
+  color: var(--color-text-muted);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-sm);
+}
+
+.planName {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+}
+
+.planLogo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.planEmph {
+  color: var(--color-indigo-600);
+  font-weight: var(--fw-bold);
+}
+
+.stepperCell {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.priceCell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  min-width: 70px;
+}
